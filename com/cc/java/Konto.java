@@ -29,14 +29,12 @@ public class Konto {
         this.kontostand = kontostand;
     } 
 
-    public static List<Konto> verfielfacheKontostand(){
+    public static List<Konto> verfielfacheKontostand(List<Integer> multiplierList){
 
         for (int i = 0; i < kontoListe.size(); i++) {
-            if (i!=kontoListe.size()-1) {
-                kontoListe.get(i).setKontostand(kontoListe.get(i).getKontostand()*(i+2));
-            } else {
-                kontoListe.get(i).setKontostand(kontoListe.get(i).getKontostand()*10);
-            }
+           
+            kontoListe.get(i).setKontostand(kontoListe.get(i).getKontostand()*multiplierList.get(i));
+            
         }
 
         return kontoListe;
