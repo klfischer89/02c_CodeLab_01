@@ -8,8 +8,11 @@ public class App {
     
     public static void main(String[] args) {
 
+        @SuppressWarnings("unused")
         Konto konto1 = new Konto();
+        @SuppressWarnings("unused")
         Konto konto2 = new Konto();
+        @SuppressWarnings("unused")
         Konto konto3 = new Konto();
 
         Konto.getKontoListe().forEach(konto -> output(konto.getKontostand()));
