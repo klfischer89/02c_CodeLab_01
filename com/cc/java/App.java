@@ -32,7 +32,7 @@ public class App {
         List<Integer> multiplierList = new ArrayList<>();
         int multiplier;
 
-        String question = "Um wie viel soll folgendes Konto erhöht werden, Konto ";
+        String question = "Mit wie viel soll folgendes Konto multipliziert werden, Konto ";
 
         Scanner input = new Scanner(System.in);
 
